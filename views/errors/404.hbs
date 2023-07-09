@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <title>{{#if title}}{{ title }} - {{ settings.defaultTitle }}{{else}}{{ settings.defaultTitle }}{{/if}}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="title"
+        content="{{#if title}}{{ title }} - {{ settings.defaultTitle }}{{else}}{{ settings.defaultTitle }}{{/if}}" />
+    <meta name="description" content="{{ settings.description }}" />
+    <meta name="keywords" content="{{ settings.keywords }}" />
+    <meta name="robots" content="index, follow">
+    <link href="{{ settings.favicon }}" rel="shortcut icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../themes/admin/css/plugin.min.css">
+    <link rel="stylesheet" href="../themes/admin/css/style.css">
+    {{{ settings.headerScript }}}
+</head>
+
+<body class="loaded">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="min-vh-100 content-center">
+                    <div class="error-page text-center">
+                        <img src="../themes/admin/images/404.svg" alt="404" class="svg">
+                        <div class="error-page__title">404</div>
+                        <h5 class="fw-500">Không tìm thấy trang!</h5>
+                        <div class="content-center mt-30">
+                            <a href="./" class="btn btn-primary btn-default btn-squared px-30">Trang Chủ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
